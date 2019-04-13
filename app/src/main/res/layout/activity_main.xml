@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainactivity_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/lib/com.amirhosein.booleanretrieval"
+    android:background="#ddd">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="@string/app_name"
+        app:titleTextColor="#fff"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="48dp"
+        android:paddingLeft="8dp"
+        android:hint="search"
+        android:textSize="20sp"
+        android:maxLines="1"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/imgb_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_search"
+        android:layout_marginRight="4dp"
+        android:layout_alignRight="@+id/edt_search"
+        android:layout_alignTop="@+id/edt_search"
+        android:layout_alignBottom="@+id/edt_search"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_search"
+        android:text="512 results"
+        android:textColor="#333"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_results"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false"
+        app2:fastScrollEnabled="true"
+        app2:fastScrollVerticalThumbDrawable="@drawable/scroll_thumb"
+        app2:fastScrollVerticalTrackDrawable="@drawable/scroll_line"
+        app2:fastScrollHorizontalThumbDrawable="@drawable/scroll_thumb"
+        app2:fastScrollHorizontalTrackDrawable="@drawable/scroll_line" />
+
+</RelativeLayout>

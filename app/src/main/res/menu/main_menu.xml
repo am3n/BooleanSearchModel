@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/parse"
+        android:title="Parse"
+        android:icon="@drawable/ic_parse"
+        app:showAsAction="always"/>
+
+</menu>

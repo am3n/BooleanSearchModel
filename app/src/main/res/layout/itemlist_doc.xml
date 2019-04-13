@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="8dp"
+    android:paddingBottom="4dp"
+    android:paddingRight="8dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rlv_itemlistdocitem_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_itemlistdoc_docId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="8dp"
+                android:maxLines="1"
+                android:text="105"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_itemlistdoc_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/txt_itemlistdoc_docId"
+                android:maxLines="1"
+                android:text="Jack Gantos"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_itemlistdoc_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_itemlistdoc_author"
+                android:maxLines="1"
+                android:text="acura rdx"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_itemlistdoc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_itemlistdoc_docId"
+                android:layout_marginBottom="4dp"
+                android:maxLines="2"
+                android:text="I've had my RDX for nearly three years on a lease and I will be turning it in and not getting another. The gas mileage is well below what is listed at 17mpg in town. I live in Boston and drive around town and get about 11/12 miles per gallon, and I'm not a lead foot. The Turbo is not as responsive as it should be--there is some lag, but it is not bad when it kicks in. Just not as perfect as the sales people tell you it is. The interior is basic. Visibility is routine. Body design is nice. But the interior trim is just an upgraded version of a Nisson X-Terra. I question if my leather seats are really leather. They remind me of the Mercedes leather- like material I had in my Turbo D. "
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_itemlistdoc_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_itemlistdoc_text"
+                android:maxLines="1"
+                android:text="09/09/2009"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
